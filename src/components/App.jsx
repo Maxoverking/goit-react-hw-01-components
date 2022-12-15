@@ -1,25 +1,16 @@
 import {UserProfile} from 'components/profile/UserProfile';
 import user from 'allData/user.json'
+import css from './App.module.css'
 
 export function App() {
-    return  <div 
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
+    return  <div className={css.app}>
       <UserProfile
             username={user.username}
             tag={user.tag}
             location={user.location}
             avatar={user.avatar}
-            followers={user.stats.followers}
-            views={user.stats.views}
-            likes={user.stats.likes}/>
+            stats={user.stats}
+           />
     </div>
     
     

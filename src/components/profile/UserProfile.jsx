@@ -2,7 +2,7 @@ import imgUrl from './maksym.webp';
 import css from './UserProfile.module.css'
 import PropTypes from 'prop-types';
 
-export const UserProfile = ({username,tag,location,avatar = imgUrl,followers,views,likes }) => {
+export const UserProfile = ({username,tag,location,avatar = imgUrl,stats }) => {
   return (
     <div className={css.profile}>
     <div className={css.description}>
@@ -19,15 +19,15 @@ export const UserProfile = ({username,tag,location,avatar = imgUrl,followers,vie
   <ul className={css.stats}>
     <li>
       <span className={css.label}>Followers</span>
-      <span className={css.quantity}>{followers}</span>
+      <span className={css.quantity}>{stats.followers}</span>
     </li>
     <li className={css.middle_li}>
       <span className={css.label}>Views</span>
-      <span className={css.quantity}>{views}</span>
+      <span className={css.quantity}>{stats.views}</span>
     </li>
     <li>
       <span className={css.label}>Likes</span>
-      <span className={css.quantity}>{likes}</span>
+      <span className={css.quantity}>{stats.likes}</span>
     </li>
   </ul>
 </div>
@@ -40,8 +40,8 @@ UserProfile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  followers:PropTypes.number.isRequired,
-  views:PropTypes.number.isRequired,
-  likes:PropTypes.number.isRequired,
-
+  stats:PropTypes.shape({
+   followers:PropTypes.number,
+   views:PropTypes.number,
+   likes:PropTypes.number,}).isRequired,
 }
