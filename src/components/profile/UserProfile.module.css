@@ -58,5 +58,9 @@ margin-top: 30px;
 .quantity{
     font-weight: 700;
 }
-
-
+.stats>li:first-child{
+        border-bottom-left-radius: 0.5em;
+}
+.stats>li:last-child{
+    border-bottom-right-radius: 0.5em;
+}
