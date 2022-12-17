@@ -1,6 +1,6 @@
 import imgUrl from './maksym.webp';
-import css from './UserProfile.module.css'
 import PropTypes from 'prop-types';
+import css from './UserProfile.module.css'
 
 export const UserProfile = ({username,tag,location,avatar = imgUrl,stats }) => {
   return (

@@ -12,16 +12,17 @@ border-radius: 0.5em;
 margin-top: 10px;
 padding-left: 15px;
 }
-.online,
-.offline{
+.round{
 width: 15px;
 height: 15px;
 border-radius: 50%;
 }
 .online{
+composes: round;
 background-color: green;
 }
 .offline{
+composes: round;
 background-color: red;
 }
 .avatar{
