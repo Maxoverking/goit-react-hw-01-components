@@ -2,7 +2,7 @@
     width: 50%; 
     margin: 20px 0 40px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 0.5em;
+    border-radius: 0.7em;
     
 }
 .header_columns{
@@ -25,8 +25,8 @@
     background-color: rgb(231, 231, 231);
 }
 .rows:last-child .columns:first-child{
-    border-bottom-left-radius: 0.5em; 
+    border-bottom-left-radius: 0.6em; 
 }
 .rows:last-child .columns:last-child{
-    border-bottom-right-radius: 0.5em; 
+    border-bottom-right-radius: 0.6em; 
 }
