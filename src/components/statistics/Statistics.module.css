@@ -37,3 +37,7 @@ margin: 10px 0 10px;
 .stat_list >.itemLiTitle:last-child{
     border-bottom-right-radius: 0.5em;
 }
+.percentage{
+    font-size: 22px;
+    font-weight: 600;
+}
